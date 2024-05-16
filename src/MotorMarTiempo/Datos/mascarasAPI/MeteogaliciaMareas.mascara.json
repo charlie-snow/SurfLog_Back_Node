@@ -1,0 +1,46 @@
+{
+  "features": [
+    {
+      "properties": {
+        "port": {
+          "id": "14",
+          "name": "Ferrol Porto Exterior"
+        },
+        "days": [
+          {
+            "timePeriod": {
+              "begin": {
+                "timeInstant": "2023-07-18-------"
+              }
+            },
+            "variables": [
+              {
+                "summary": [
+                  {
+                    "id": "0",
+                    "state": "High tides",
+                    "timeInstant": "-------05:36-------",
+                    "height": 3.3
+                  },
+                  {
+                    "id": "1",
+                    "state": "Low tides",
+                    "timeInstant": "-------11:35-------",
+                    "height": 1
+                  },
+                  {
+                    "id": "2",
+                    "state": "High tides",
+                    "timeInstant": "-------17:50-------",
+                    "height": 3.6
+                  }
+                ]
+              }
+            ]
+          },
+          { "XXX COMENTARIO": "REPETIDO X DIAS" }
+        ]
+      }
+    }
+  ]
+}

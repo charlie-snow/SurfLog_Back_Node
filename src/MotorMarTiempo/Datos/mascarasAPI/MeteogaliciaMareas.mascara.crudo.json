@@ -1,0 +1,239 @@
+{
+  "type": "-------",
+  "crs": "-------",
+  "features": [
+    {
+      "XXX COMENTARIO": "AQUI VA TODO",
+
+      "type": "-------",
+      "geometry": "-------",
+      "properties": {
+        "port": {
+          "XXX COMENTARIO": "EL NOMBRE DEL PUERTO Y EL ID",
+
+          "id": "14",
+          "name": "Ferrol Porto Exterior",
+          "geometry": "-------"
+        },
+        "referencePort": "-------",
+        "days": [
+          { "XXX COMENTARIO": "ARRAY DE DIAS" },
+
+          {
+            "timePeriod": {
+              "XXX COMENTARIO": "DIA",
+
+              "begin": {
+                "timeInstant": "2023-07-18-------"
+              },
+              "end": "-------"
+            },
+            "variables": [
+              {
+                "name": "-------",
+                "units": "-------",
+                "summary": [
+                  { "XXX COMENTARIO": "MAREAS DEL DIA" },
+
+                  {
+                    "id": "0",
+                    "state": "High tides",
+                    "timeInstant": "-------05:36-------",
+                    "height": 3.3
+                  },
+                  {
+                    "id": "1",
+                    "state": "Low tides",
+                    "timeInstant": "-------11:35-------",
+                    "height": 1
+                  },
+                  {
+                    "id": "2",
+                    "state": "High tides",
+                    "timeInstant": "-------17:50-------",
+                    "height": 3.6
+                  }
+                ],
+                "values": "-------XXX COMENTARIO: PUNTOS DE MAREA CADA MEDIA HORA  -------"
+              }
+            ]
+          },
+          { "XXX COMENTARIO": "REPETIDO X DIAS" },
+
+          {
+            "timePeriod": {
+              "begin": {
+                "timeInstant": "2023-07-19T00:00:00+02"
+              },
+              "end": {
+                "timeInstant": "2023-07-19T23:59:59+02"
+              }
+            },
+            "variables": [
+              {
+                "name": "tides",
+                "units": "m",
+                "summary": [
+                  {
+                    "id": "0",
+                    "state": "Low tides",
+                    "timeInstant": "2023-07-19T00:09:00+02",
+                    "height": 0.9
+                  },
+                  {
+                    "id": "1",
+                    "state": "High tides",
+                    "timeInstant": "2023-07-19T06:11:00+02",
+                    "height": 3.3
+                  },
+                  {
+                    "id": "2",
+                    "state": "Low tides",
+                    "timeInstant": "2023-07-19T12:09:00+02",
+                    "height": 1
+                  },
+                  {
+                    "id": "3",
+                    "state": "High tides",
+                    "timeInstant": "2023-07-19T18:24:00+02",
+                    "height": 3.6
+                  }
+                ],
+                "values": "------- Valores de altura cada media hora -------"
+              }
+            ]
+          },
+          {
+            "timePeriod": {
+              "begin": {
+                "timeInstant": "2023-07-20T00:00:00+02"
+              },
+              "end": {
+                "timeInstant": "2023-07-20T23:59:59+02"
+              }
+            },
+            "variables": [
+              {
+                "name": "tides",
+                "units": "m",
+                "summary": [
+                  {
+                    "id": "0",
+                    "state": "Low tides",
+                    "timeInstant": "2023-07-20T00:43:00+02",
+                    "height": 0.9
+                  },
+                  {
+                    "id": "1",
+                    "state": "High tides",
+                    "timeInstant": "2023-07-20T06:44:00+02",
+                    "height": 3.3
+                  },
+                  {
+                    "id": "2",
+                    "state": "Low tides",
+                    "timeInstant": "2023-07-20T12:42:00+02",
+                    "height": 1
+                  },
+                  {
+                    "id": "3",
+                    "state": "High tides",
+                    "timeInstant": "2023-07-20T18:57:00+02",
+                    "height": 3.6
+                  }
+                ],
+                "values": "------- Valores de altura cada media hora -------"
+              }
+            ]
+          },
+          {
+            "timePeriod": {
+              "begin": {
+                "timeInstant": "2023-07-21T00:00:00+02"
+              },
+              "end": {
+                "timeInstant": "2023-07-21T23:59:59+02"
+              }
+            },
+            "variables": [
+              {
+                "name": "tides",
+                "units": "m",
+                "summary": [
+                  {
+                    "id": "0",
+                    "state": "Low tides",
+                    "timeInstant": "2023-07-21T01:15:00+02",
+                    "height": 0.9
+                  },
+                  {
+                    "id": "1",
+                    "state": "High tides",
+                    "timeInstant": "2023-07-21T07:17:00+02",
+                    "height": 3.3
+                  },
+                  {
+                    "id": "2",
+                    "state": "Low tides",
+                    "timeInstant": "2023-07-21T13:15:00+02",
+                    "height": 1
+                  },
+                  {
+                    "id": "3",
+                    "state": "High tides",
+                    "timeInstant": "2023-07-21T19:30:00+02",
+                    "height": 3.6
+                  }
+                ],
+                "values": "------- Valores de altura cada media hora -------"
+              }
+            ]
+          },
+          {
+            "timePeriod": {
+              "begin": {
+                "timeInstant": "2023-07-22T00:00:00+02"
+              },
+              "end": {
+                "timeInstant": "2023-07-22T23:59:59+02"
+              }
+            },
+            "variables": [
+              {
+                "name": "tides",
+                "units": "m",
+                "summary": [
+                  {
+                    "id": "0",
+                    "state": "Low tides",
+                    "timeInstant": "2023-07-22T01:47:00+02",
+                    "height": 1
+                  },
+                  {
+                    "id": "1",
+                    "state": "High tides",
+                    "timeInstant": "2023-07-22T07:51:00+02",
+                    "height": 3.3
+                  },
+                  {
+                    "id": "2",
+                    "state": "Low tides",
+                    "timeInstant": "2023-07-22T13:48:00+02",
+                    "height": 1.1
+                  },
+                  {
+                    "id": "3",
+                    "state": "High tides",
+                    "timeInstant": "2023-07-22T20:05:00+02",
+                    "height": 3.5
+                  }
+                ],
+                "values": "------- Valores de altura cada media hora -------"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

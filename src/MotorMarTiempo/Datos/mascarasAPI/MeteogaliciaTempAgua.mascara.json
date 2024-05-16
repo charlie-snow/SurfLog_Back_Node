@@ -1,0 +1,41 @@
+{
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [-8.83816, 43.48991]
+      },
+      "properties": {
+        "days": [
+          {
+            "timePeriod": {
+              "begin": {
+                "timeInstant": "2024-03-13------------"
+              }
+            },
+            "variables": [
+              {
+                "name": "sea_water_temperature",
+                "values": [
+                  {
+                    "timeInstant": "2024-03-13T13:00:00+01",
+                    "value": 13
+                  },
+                  {
+                    "timeInstant": "2024-03-13T14:00:00+01",
+                    "value": 14
+                  },
+                  {
+                    "timeInstant": "2024-03-13T15:00:00+01",
+                    "value": 13
+                  },
+                  { "XXX COMENTARIO": "REPETIDO X HORAS" }
+                ]
+              }
+            ]
+          },
+          { "XXX COMENTARIO": "REPETIDO X DIAS" }
+        ]
+      }
+    }
+  ]
+}

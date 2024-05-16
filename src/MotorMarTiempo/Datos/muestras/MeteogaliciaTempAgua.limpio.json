@@ -1,0 +1,45 @@
+{
+  "propiedades": {
+    "id": "14",
+    "nombre": "Ferrol Porto Exterior"
+  },
+  "datos": {
+    "unidades": "Temperatura del agua en ºC por horas para 5 días",
+    "valores": [
+      {
+        "dia": "2024-03-13T00:00:00+01",
+        "temperaturas": [
+          {
+            "momento": "2024-03-13T13:00:00+01",
+            "temperatura": 13
+          },
+          {
+            "momento": "2024-03-13T14:00:00+01",
+            "temperatura": 14
+          },
+          {
+            "momento": "2024-03-13T15:00:00+01",
+            "temperatura": 13
+          }
+        ]
+      },
+      {
+        "dia": "2024-03-14T00:00:00+02",
+        "temperaturas": [
+          {
+            "momento": "2024-03-13T13:00:00+01",
+            "temperatura": 13
+          },
+          {
+            "momento": "2024-03-13T14:00:00+01",
+            "temperatura": 14
+          },
+          {
+            "momento": "2024-03-13T15:00:00+01",
+            "temperatura": 13
+          }
+        ]
+      }
+    ]
+  }
+}

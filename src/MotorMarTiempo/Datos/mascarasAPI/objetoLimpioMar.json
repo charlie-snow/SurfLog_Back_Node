@@ -1,0 +1,10 @@
+{
+  "propiedades": {
+    "nombre": "Previsión del mar en "
+  },
+  "datos": {
+    "unidades": "Valores de previsión por hora",
+    "valores": {}
+  },
+  "prueba": 1
+}

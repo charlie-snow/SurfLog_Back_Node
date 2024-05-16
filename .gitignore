@@ -1,0 +1,9 @@
+node_modules
+.env
+src/uploads/users/
+src/uploads/registros/
+src/uploads/*.jpg
+src/uploads/*.png
+!src/uploads/examples/
+.netlify
+.vercel

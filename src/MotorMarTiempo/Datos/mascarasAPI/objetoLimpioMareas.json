@@ -1,0 +1,131 @@
+{
+  "propiedades": {
+    "id": "1",
+    "nombre": "A Coruña"
+  },
+  "datos": {
+    "unidades": "Mareas por dia",
+    "valores": [
+      {
+        "dia": "2023-11-28T00:00:00+01",
+        "mareas": [
+          {
+            "marea": "pleamar",
+            "hora": "04:24",
+            "altura": 3.8
+          },
+          {
+            "marea": "bajamar",
+            "hora": "10:34",
+            "altura": 0.6
+          },
+          {
+            "marea": "pleamar",
+            "hora": "16:47",
+            "altura": 3.7
+          },
+          {
+            "marea": "bajamar",
+            "hora": "22:46",
+            "altura": 0.7
+          }
+        ]
+      },
+      {
+        "dia": "2023-11-29T00:00:00+01",
+        "mareas": [
+          {
+            "marea": "pleamar",
+            "hora": "05:03",
+            "altura": 3.8
+          },
+          {
+            "marea": "bajamar",
+            "hora": "11:16",
+            "altura": 0.7
+          },
+          {
+            "marea": "pleamar",
+            "hora": "17:28",
+            "altura": 3.5
+          },
+          {
+            "marea": "bajamar",
+            "hora": "23:24",
+            "altura": 0.9
+          }
+        ]
+      },
+      {
+        "dia": "2023-11-30T00:00:00+01",
+        "mareas": [
+          {
+            "marea": "pleamar",
+            "hora": "05:43",
+            "altura": 3.7
+          },
+          {
+            "marea": "bajamar",
+            "hora": "11:59",
+            "altura": 0.8
+          },
+          {
+            "marea": "pleamar",
+            "hora": "18:08",
+            "altura": 3.4
+          }
+        ]
+      },
+      {
+        "dia": "2023-12-01T00:00:00+01",
+        "mareas": [
+          {
+            "marea": "bajamar",
+            "hora": "00:03",
+            "altura": 1
+          },
+          {
+            "marea": "pleamar",
+            "hora": "06:23",
+            "altura": 3.5
+          },
+          {
+            "marea": "bajamar",
+            "hora": "12:42",
+            "altura": 1
+          },
+          {
+            "marea": "pleamar",
+            "hora": "18:49",
+            "altura": 3.2
+          }
+        ]
+      },
+      {
+        "dia": "2023-12-02T00:00:00+01",
+        "mareas": [
+          {
+            "marea": "bajamar",
+            "hora": "00:43",
+            "altura": 1.2
+          },
+          {
+            "marea": "pleamar",
+            "hora": "07:05",
+            "altura": 3.4
+          },
+          {
+            "marea": "bajamar",
+            "hora": "13:27",
+            "altura": 1.2
+          },
+          {
+            "marea": "pleamar",
+            "hora": "19:34",
+            "altura": 3
+          }
+        ]
+      }
+    ]
+  }
+}

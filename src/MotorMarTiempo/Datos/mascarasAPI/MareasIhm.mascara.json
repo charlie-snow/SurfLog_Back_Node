@@ -1,0 +1,31 @@
+{
+  "mareas": {
+    "id": "19",
+    "puerto": "Sada FontÃ¡n (RÃ­a de Betanzos)",
+    "fecha": "2023-03-28",
+    "datos": {
+      "marea": [
+        {
+          "hora": "01:25",
+          "altura": "1.222",
+          "tipo": "bajamar"
+        },
+        {
+          "hora": "07:41",
+          "altura": "3.053",
+          "tipo": "pleamar"
+        },
+        {
+          "hora": "13:46",
+          "altura": "1.409",
+          "tipo": "bajamar"
+        },
+        {
+          "hora": "20:05",
+          "altura": "3.005",
+          "tipo": "pleamar"
+        }
+      ]
+    }
+  }
+}

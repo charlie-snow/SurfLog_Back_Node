@@ -1,0 +1,131 @@
+{
+  "propiedades": {
+    "id": "14",
+    "nombre": "Ferrol Porto Exterior"
+  },
+  "datos": {
+    "unidades": "Mareas por dia",
+    "valores": [
+      {
+        "dia": "2023-07-18T00:00:00+02",
+        "mareas": [
+          {
+            "marea": "pleamar",
+            "hora": "05:36",
+            "altura": 3.3
+          },
+          {
+            "marea": "bajamar",
+            "hora": "11:35",
+            "altura": 1
+          },
+          {
+            "marea": "pleamar",
+            "hora": "17:50",
+            "altura": 3.6
+          }
+        ]
+      },
+      {
+        "dia": "2023-07-19T00:00:00+02",
+        "mareas": [
+          {
+            "marea": "bajamar",
+            "hora": "00:09",
+            "altura": 0.9
+          },
+          {
+            "marea": "pleamar",
+            "hora": "06:11",
+            "altura": 3.3
+          },
+          {
+            "marea": "bajamar",
+            "hora": "12:09",
+            "altura": 1
+          },
+          {
+            "marea": "pleamar",
+            "hora": "18:24",
+            "altura": 3.6
+          }
+        ]
+      },
+      {
+        "dia": "2023-07-20T00:00:00+02",
+        "mareas": [
+          {
+            "marea": "bajamar",
+            "hora": "00:43",
+            "altura": 0.9
+          },
+          {
+            "marea": "pleamar",
+            "hora": "06:44",
+            "altura": 3.3
+          },
+          {
+            "marea": "bajamar",
+            "hora": "12:42",
+            "altura": 1
+          },
+          {
+            "marea": "pleamar",
+            "hora": "18:57",
+            "altura": 3.6
+          }
+        ]
+      },
+      {
+        "dia": "2023-07-21T00:00:00+02",
+        "mareas": [
+          {
+            "marea": "bajamar",
+            "hora": "01:15",
+            "altura": 0.9
+          },
+          {
+            "marea": "pleamar",
+            "hora": "07:17",
+            "altura": 3.3
+          },
+          {
+            "marea": "bajamar",
+            "hora": "13:15",
+            "altura": 1
+          },
+          {
+            "marea": "pleamar",
+            "hora": "19:30",
+            "altura": 3.6
+          }
+        ]
+      },
+      {
+        "dia": "2023-07-22T00:00:00+02",
+        "mareas": [
+          {
+            "marea": "bajamar",
+            "hora": "01:47",
+            "altura": 1
+          },
+          {
+            "marea": "pleamar",
+            "hora": "07:51",
+            "altura": 3.3
+          },
+          {
+            "marea": "bajamar",
+            "hora": "13:48",
+            "altura": 1.1
+          },
+          {
+            "marea": "pleamar",
+            "hora": "20:05",
+            "altura": 3.5
+          }
+        ]
+      }
+    ]
+  }
+}
