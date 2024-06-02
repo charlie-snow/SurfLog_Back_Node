@@ -10,11 +10,11 @@ const pool = await getPool();
 const getRegistro = async (id, pruebas) => {
   try {
     let tabla_registros = "registros";
-    if (pruebas) {
+    if (pruebas === "true") {
       tabla_registros += "_pruebas";
     }
     let tabla_adjuntos = "adjuntos";
-    if (pruebas) {
+    if (pruebas === "true") {
       tabla_adjuntos += "_pruebas";
     }
     let consulta_query = "";

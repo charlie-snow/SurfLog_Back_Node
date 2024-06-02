@@ -1,15 +1,15 @@
 // Importaciones
 import insertRegistroController from "./insertRegistroController.js";
-// import getRegistroController from "./getRegistroController.js";
+import getRegistroController from "./getRegistroController.js";
 import deleteRegistroController from "./deleteRegistroController.js";
 import getRegistrosController from "./getRegistrosController.js";
-// import modifyRegistroController from "./modRegistroController.js";
+import modifyRegistroController from "./modifyRegistroController.js";
 
 // Exportaciones
 export {
   insertRegistroController,
-  // getRegistroController,
+  getRegistroController,
   deleteRegistroController,
   getRegistrosController,
-  // modifyRegistroController,
+  modifyRegistroController,
 };

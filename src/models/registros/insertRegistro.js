@@ -3,10 +3,8 @@ import getPool from "../../db/getPool.js";
 import genError from "../../utils/helpers.js";
 import mysql from "mysql2/promise";
 
-// Guardamos en una variable el gestor de conexiones a la DB
 const pool = await getPool();
 
-// Creamos una función para insertar una registro en la DB
 const insertRegistro = async ({
   lugar_id,
   usuario_id,
@@ -67,7 +65,6 @@ const insertRegistro = async ({
       velocidad_viento,
     };
 
-    // Remove properties with null values
     const filteredValues = Object.fromEntries(
       Object.entries(valuesObject).filter(([_, value]) => value !== "null")
     );

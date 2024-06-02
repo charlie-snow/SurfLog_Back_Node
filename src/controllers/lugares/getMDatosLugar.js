@@ -98,8 +98,8 @@ const getMDatosLugar = async (lugar, momento) => {
 
     let momentoDate = new Date(momento);
     var ahoraDate = new Date();
-    // console.log("\x1b[38;5;214m%s\x1b[0m", "momentoDate: " + momentoDate);
-    // console.log("\x1b[38;5;214m%s\x1b[0m", "ahoraDate: " + ahoraDate);
+    console.log("\x1b[38;5;214m%s\x1b[0m", "momentoDate: " + momentoDate);
+    console.log("\x1b[38;5;214m%s\x1b[0m", "ahoraDate: " + ahoraDate);
 
     const diferencia = ahoraDate - momentoDate;
     const ahora = !(Math.abs(diferencia) > 3600000);

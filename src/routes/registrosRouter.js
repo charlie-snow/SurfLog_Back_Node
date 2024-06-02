@@ -6,7 +6,8 @@ import {
   insertRegistroController,
   deleteRegistroController,
   getRegistrosController,
-  // modifyRegistroController,
+  getRegistroController,
+  modifyRegistroController,
 } from "../controllers/registros/index.js";
 // import registroSchema from "../controllers/schemas/registros/insertRegistro.js";
 // import idRegistroSchema from "../controllers/schemas/registros/idRegistro.js";
@@ -21,16 +22,23 @@ router.post(
   insertRegistroController
 );
 
+router.put(
+  "/registro/:id", // ?pruebas=true/false
+  // validation(registroSchema),
+  // Auth,
+  modifyRegistroController
+);
+
 // Endpoint de obtención de registro por id
-// router.get(
-//   "/registros/:id",
-//   // validation(idRegistroSchema),
-//   getRegistroController
-// );
+router.get(
+  "/registro/:id", // ?pruebas=true/false
+  // validation(idRegistroSchema),
+  getRegistroController
+);
 
 // Endpoint de eliminación de registro por id
 router.delete(
-  "/registro/:id",
+  "/registro/:id", // ?pruebas=true/false
   // validation(idRegistroSchema),
   // Auth,
   deleteRegistroController

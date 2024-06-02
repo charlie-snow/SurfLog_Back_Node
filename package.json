@@ -1,7 +1,7 @@
 {
   "type": "module",
   "name": "api_surflog",
-  "version": "0.0.2 - lugares",
+  "version": "0.0.2.8 - lm modifica",
   "description": "API Surflog",
   "main": "app.js",
   "scripts": {

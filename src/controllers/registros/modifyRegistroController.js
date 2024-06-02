@@ -1,7 +1,8 @@
 import genError from "../../utils/helpers.js";
-import { insertRegistro } from "../../models/registros/index.js";
-import { insertAdjuntos } from "../../models/adjuntos/index.js";
-import getMDatosLugar from "../lugares/getMDatosLugar.js";
+// import { insertRegistro } from "../../models/registros/index.js";
+// import { insertAdjuntos } from "../../models/adjuntos/index.js";
+// import getMDatosLugar from "../lugares/getMDatosLugar.js";
+import modifyRegistro from "../../models/registros/modifyRegistro.js";
 import getLugar from "../../models/lugares/getLugar.js";
 
 // formatear la fecha del momento para poder insertarla en la base de datos
@@ -17,9 +18,12 @@ function formatearMomento(momento) {
   return `${year}-${month}-${day}T${hours}:${minutes}`;
 }
 
-const insertRegistroController = async (req, res, next) => {
+const modifyRegistroController = async (req, res, next) => {
   try {
     let ruta_adjuntos_registros = "registros/";
+
+    const { id } = req.params;
+    const pruebas = req.query.pruebas;
 
     let {
       lugar_id,
@@ -47,12 +51,11 @@ const insertRegistroController = async (req, res, next) => {
       texto,
       tiempo,
       velocidad_viento,
-      pruebas,
     } = req.body;
 
     momento = formatearMomento(momento);
 
-    if (pruebas === "1") {
+    if (pruebas === "true") {
       // ruta_registros_back += "pruebas/";
       ruta_adjuntos_registros += "pruebas/";
     }
@@ -63,24 +66,8 @@ const insertRegistroController = async (req, res, next) => {
       throw genError("El lugar especificado no existe", 400);
     }
 
-    const mdatos_lugar = await getMDatosLugar(lugar, momento);
-
-    altura_marea = mdatos_lugar.altura_marea;
-    altura_ola = mdatos_lugar.altura_ola;
-    direccion_ola = mdatos_lugar.direccion_ola;
-    direccion_viento = mdatos_lugar.direccion_viento;
-    lluvia = mdatos_lugar.lluvia;
-    nubes = mdatos_lugar.nubes;
-    periodo_ola = mdatos_lugar.periodo_ola;
-    punto_marea = mdatos_lugar.punto_marea;
-    subiendo_marea = mdatos_lugar.subiendo_marea;
-    temperatura_agua = mdatos_lugar.temperatura_agua;
-    temperatura_ambiente = mdatos_lugar.temperatura_ambiente;
-    tiempo = mdatos_lugar.tiempo;
-    velocidad_viento = mdatos_lugar.velocidad_viento;
-
-    // Llamamos a la función encargada de insertar los datos de la registro(Ver explicación en su respectivo lugar)
-    const registro_id = await insertRegistro({
+    await modifyRegistro({
+      id,
       lugar_id,
       usuario_id,
       altura_marea,
@@ -107,24 +94,24 @@ const insertRegistroController = async (req, res, next) => {
       pruebas,
     });
 
-    if (registro_id) {
-      // Si se ha insertado bien el registro, insertar los adjuntos
-      // Si se enviaron imágenes, copiarlas al servidor e insertar las rutas en la BD
-      if (fotos) {
-        await insertAdjuntos(fotos, registro_id, pruebas, "foto");
-      }
-      if (videos) {
-        await insertAdjuntos(videos, registro_id, pruebas, "video");
-      }
-    } else {
-      console.log(
-        "No se han podido insertar los adjuntos por error insertando registro"
-      );
-    }
+    // if (registro_id) {
+    //   // Si se ha insertado bien el registro, insertar los adjuntos
+    //   // Si se enviaron imágenes, copiarlas al servidor e insertar las rutas en la BD
+    //   if (fotos) {
+    //     await insertAdjuntos(fotos, registro_id, pruebas, "foto");
+    //   }
+    //   if (videos) {
+    //     await insertAdjuntos(videos, registro_id, pruebas, "video");
+    //   }
+    // } else {
+    //   console.log(
+    //     "No se han podido insertar los adjuntos por error insertando registro"
+    //   );
+    // }
 
     // Respuesta
     res.status(200).json({
-      message: "Registro insertado con éxito!",
+      message: "Registro modificado con éxito!",
     });
   } catch (error) {
     const statusCode = error.httpStatus || 500;
@@ -136,4 +123,4 @@ const insertRegistroController = async (req, res, next) => {
 };
 
 // Exportaciones
-export default insertRegistroController;
+export default modifyRegistroController;

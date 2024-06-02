@@ -267,6 +267,12 @@ export const limpiar = async (concepto, api, ahora, fecha_pasada, url) => {
           equivalenciasOpenmeteoTiempo
         );
         break;
+      case "tiempo_openmeteo_pasado":
+        objetoLimpio = await crearObjetoLimpioOpenmeteoTiempo(
+          objeto,
+          equivalenciasOpenmeteoTiempo
+        );
+        break;
       case "mar_openmeteo":
         objetoLimpio = await crearObjetoLimpioOpenmeteoMar(
           objeto,
@@ -307,13 +313,13 @@ export const limpiar = async (concepto, api, ahora, fecha_pasada, url) => {
           objeto,
           equivalenciasMeteogaliciaTempAgua
         );
-        console.log("objetoLimpioTempAgua :");
-        console.log(objetoLimpio);
+        // console.log("objetoLimpioTempAgua :");
+        // console.log(objetoLimpio);
         break;
     }
 
     // const
-    // console.log("objetoLimpioTiempo :");
+    // console.log("objetoLimpio :");
     // console.log(objetoLimpio);
 
     return objetoLimpio;
