@@ -25,6 +25,7 @@ const getPool = async () => {
         password: PASSWORD_DB,
         port: PORT_DB,
         database: NAME_DB,
+        dateStrings: true, // This option will return date and time fields as strings
       });
     }
     return pool;

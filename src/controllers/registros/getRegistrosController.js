@@ -86,7 +86,7 @@ const getRegistrosController = async (req, res, next, pruebas) => {
     // adjunto la ruta al servidor de bd, para verlo en el front siendo admin
     lista.bd = HOST_DB + "/" + NAME_DB;
 
-    // console.log(list);
+    console.log(lista[lista.length - 1]);
     res.send({
       status: "Correcto",
       data: lista,

@@ -33,7 +33,6 @@ const insertRegistro = async ({
   pruebas,
 }) => {
   try {
-    // console.log("pruebas:" + pruebas);
     let tabla = "registros";
     if (pruebas === "1") {
       tabla = tabla + "_pruebas";
@@ -70,12 +69,9 @@ const insertRegistro = async ({
     );
 
     let sqlValues = [filteredValues];
-    console.log(sqlValues);
-    // Generate SQL query and values
     const sqlQuery = `INSERT INTO ${tabla} SET ?`;
     const consulta = mysql.format(sqlQuery, sqlValues);
 
-    // const consulta = mysql.format(sqlQuery, sqlValues);
     console.log("\x1b[38;5;214m%s\x1b[0m", "Consulta SQL: " + consulta);
 
     // Realizamos la petición a la DB
@@ -83,7 +79,6 @@ const insertRegistro = async ({
     console.log("insertId: " + insertId);
     return insertId;
   } catch (error) {
-    // En caso de haber algun error, lo manejamos
     throw genError("Error insertando el registro", 500);
   }
 };

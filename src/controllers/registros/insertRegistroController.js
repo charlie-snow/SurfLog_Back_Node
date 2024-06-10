@@ -50,7 +50,7 @@ const insertRegistroController = async (req, res, next) => {
       pruebas,
     } = req.body;
 
-    momento = formatearMomento(momento);
+    // momento = formatearMomento(momento);
 
     if (pruebas === "1") {
       // ruta_registros_back += "pruebas/";
